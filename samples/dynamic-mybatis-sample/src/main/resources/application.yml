@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    list:
+      - name: ds_a
+        username: sa
+        password: ""
+        url: jdbc:h2:mem:a
+        driver-class-name: org.h2.Driver
+        schema: db/schemaA.sql
+      - name: ds_b
+        username: sa
+        password: ""
+        url: jdbc:h2:mem:b
+        driver-class-name: org.h2.Driver
+        schema: db/schemaA.sql
+logging:
+  level:
+    com.github.xiaoy.samples: debug
